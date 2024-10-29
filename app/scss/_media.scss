@@ -1,0 +1,660 @@
+@media (max-width: 1200px) {
+    .reviews {
+        &__inner {
+            padding: 100px 0;
+        }
+    }
+    .articles {
+        &__inner {
+            padding: 100px 0;
+        }
+    }
+    .subscribe {
+        &__inner {
+            padding: 100px 0;
+        }
+    }
+    .footer {
+        &__inner {
+            padding: 80px 0;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        font-size: 16px;
+    }
+    %title-font {
+        font-size: 40px;
+    }
+    .header {
+        &__warning {
+            padding: 4px 0;
+        }
+        &__warning-text {
+            font-size: 14px;
+        }
+        &__inner {
+            justify-content: space-between;
+        }
+        &__logo {
+            margin-right: 0;
+        }
+        &__menu {
+            position: absolute;
+            top: 100%;
+            transform: translateX(-500px);
+            left: 0;
+            width: 40%;
+            flex-direction: column;
+            align-items: center;
+            background-color: #F2F6F7;
+            margin-right: 0;
+            padding-bottom: 40px;
+            box-shadow: 0px 10px 10px rgb(0 72 109 / 20%);
+            border-radius: 0 0 4px 0;
+        }
+        &__menu.open {
+            transform: translateX(0);
+            transition: all .3s;
+        }
+        &__menu-list {
+            margin-right: 0;
+            flex-direction: column;
+        }
+        &__menu-item {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &__burger {
+            display: flex;
+        }
+    }
+    .top {
+        &__inner {
+            padding-top: 135px;
+            margin-bottom: 110px;
+        }
+        &__info {
+            padding: 90px 30px 90px 0;
+            &::before {
+                top: -195px;
+            }
+        }
+        &__title {
+            font-size: 50px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__img {
+            top: 30px;
+            &::after {
+                bottom: 30px;
+                left: 35px;
+            }
+        }
+    }
+    .practice {
+        &__inner {
+            padding-bottom: 110px;
+        }
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+        &__card {
+            padding: 20px 15px;
+        }
+        &__card-img {
+            margin-bottom: 25px;
+        }
+        &__card-info {
+            margin-bottom: 20px;
+        }
+        &__card-title {
+            font-size: 20px;
+        }
+        &__card-text {
+            font-size: 18px;
+        }
+    }
+    .about {
+        &__info {
+            padding: 30px;
+        }
+        &__title {
+            max-width: none;
+        }
+        &__text {
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+    }
+    .reviews {
+        &__item-text {
+            font-size: 24px;
+        }
+        &__item-author {
+            font-size: 14px;
+        }
+        & .slick-arrow {
+            width: 50px;
+        }
+    }
+    .articles {
+        &__inner {
+            padding-top: 20px;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__card-content {
+            padding: 20px 15px;
+        }
+        &__card-date {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        &__card-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .subscribe {
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+    }
+    .footer {
+        &__content {
+            font-size: 16px;
+        }
+        &__logo {
+            margin-bottom: 20px;
+        }
+        &__mail-box {
+            max-width: 350px;
+        }
+        &__mail-title {
+            font-size: 24px;
+            text-align: center;
+        }
+        &__form-email {
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+        &__form-btn {
+            top: 6px;
+            right: 6px;
+        }
+        &__social-link::before {
+            width: 26px;
+            height: 26px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .btn {
+        font-size: 14px;
+    }
+    %title-font {
+        font-size: 36px;
+    }
+    .header {
+        &__warning {
+            padding: 2px 0;
+        }
+        &__warning-text {
+            font-size: 12px;
+        }
+        &__inner {
+            padding: 15px 0;
+        }
+        &__burger {
+            height: 48px;
+            & span {
+                height: 3px;
+            }
+        }
+        &__menu-link {
+            font-size: 16px;
+            &::after {
+                height: 2px;
+            }
+        }
+    }
+    .top {
+        &__inner {
+            padding-top: 104px;
+            margin-bottom: 80px;
+        }
+        &__info {
+            padding: 50px 30px 50px 0;
+            &::before {
+                top: -215px;
+            }
+        }
+        &__title {
+            font-size: 44px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__img {
+            top: 20px;
+            &::after {
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+    }
+    .practice {
+        &__title {
+            margin-bottom: 0;
+        }
+        &__text {
+            font-size: 16px;
+            max-width: 495px;
+            margin-bottom: 15px;
+        }
+        &__row {
+            justify-content: center;
+        }
+        &__col {
+            width: 40%;
+        }
+        &__card-img {
+            margin-bottom: 15px;
+        }
+        &__card-title {
+            margin-bottom: 5px;
+        }
+    }
+    .about {
+        &__info {
+            max-width: 365px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+    .reviews {
+        &__item {
+            padding: 0 50px;
+        }
+        &__item-text {
+            font-size: 20px;
+        }
+    }
+    .articles {
+        &__inner {
+            padding-top: 0;
+            padding-bottom: 60px;
+        }
+        &__row {
+            justify-content: center;
+        }
+        &__col {
+            width: 40%;
+        }
+        &__card-title {
+            font-size: 18px;
+        }
+    }
+    .subscribe {
+        &__inner {
+            padding: 60px 0;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    }
+    .footer {
+        &__inner {
+            padding: 40px 0;
+        }
+        &__content {
+            font-size: 14px;
+        }
+        &__logo {
+            margin-bottom: 10px;
+        }
+        &__logo-img {
+            max-height: 21px;
+            max-width: 88px;
+        }
+        &__mail-box {
+            max-width: 295px;
+        }
+        &__mail-title {
+            font-size: 20px;
+        }
+        &__form-email {
+            padding: 8px 50px 8px 15px;
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+        &__form-btn {
+            width: 36px;
+            height: 36px;
+            top: 4px;
+            right: 4px;
+        }
+        &__social-link {
+            color: #99b6c5;
+            padding-left: 30px;
+            position: relative;
+            &::before {
+                width: 22px;
+                height: 22px;
+            }
+        }
+        &__copyright {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .header {
+        &__burger {
+            width: 55px;
+            height: 37px;
+            & span {
+                margin: 3px 0;
+            }
+        }
+    }
+    .top {
+        &__inner {
+            padding-top: 90px;
+            margin-bottom: 60px;
+        }
+        &__info {
+            padding: 30px 30px 30px 0;
+            &::before {
+                width: 158px;
+                height: 158px;
+                top: -170px;
+            }
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__img::before {
+            width: 158px;
+            height: 158px;
+            bottom: -46px;
+            left: -46px;
+        }
+    }
+    .practice {
+        &__col {
+            width: 50%;
+        }
+    }
+    .about {
+        &__inner {
+            padding-top: 120px;
+        }
+        &__content::after {
+            width: 158px;
+            height: 158px;
+            top: -46px;
+            right: -46px;
+        }
+        &__info {
+            max-width: 300px;
+            padding: 20px;
+        }
+        &__text {
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+    }
+    .reviews {
+        &__item {
+            padding: 0 55px;
+        }
+        &__item-text {
+            font-size: 18px;
+        }
+        &__item-author {
+            font-size: 12px;
+        }
+        & .slick-arrow {
+            width: 33px;
+        }
+    }
+    .articles {
+        &__col {
+            width: 50%;
+        }
+    }
+    .subscribe {
+        &__title {
+            margin-bottom: 0px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+    .footer {
+        &__content {
+            font-size: 12px;
+        }
+        &__mail-box {
+            max-width: 255px;
+        }
+        &__mail-title {
+            font-size: 18px;
+        }
+        &__form-btn {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    %title-font {
+        font-size: 32px;
+    }
+    .header {
+        &__warning-text {
+            font-size: 10px;
+        }
+        &__menu {
+            padding: 30px 0;
+            width: 50%;
+        }
+    }
+    .top {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        &__info {
+            text-align: center;
+            padding-top: 40px;
+            &::before {
+                width: 138px;
+                height: 138px;
+                top: -100px;
+            }
+        }
+        &__title {
+            max-width: none;
+        }
+        &__img {
+            background-color: inherit;
+            align-self: center;
+            left: -30px;
+            &::after {
+                top: -20px;
+                right: -20px;
+                bottom: 20px;
+                left: 20px;
+            }
+            &::before {
+                width: 128px;
+                height: 128px;
+                bottom: -36px;
+                left: -36px;
+            }
+            img {
+                max-height: 330px;
+                object-fit: contain;
+                margin: 0 auto;
+            }
+        }
+    }
+    .practice {
+        &__title,
+        &__text {
+            text-align: center;
+            max-width: none;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__col {
+            width: 80%;
+            text-align: center;
+        }
+        &__card-img {
+            margin: 0 auto 15px;
+        }
+        &__card-text {
+            font-size: 16px;
+        }
+        &__card-link {
+            align-self: center;
+        }
+    }
+    .about {
+        &__info {
+            max-width: 260px;
+            padding: 15px;
+        }
+        &__content::after {
+            width: 128px;
+            height: 128px;
+            top: -36px;
+            right: -36px;
+        }
+    }
+    .reviews {
+        &__inner {
+            padding: 60px 0;
+        }
+        & .slick-arrow {
+            width: 46px;
+        }
+    }
+    .articles {
+        &__title {
+            text-align: center;
+        }
+        &__col {
+            width: 80%;
+        }
+        &__card {
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+        &__address {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        &__mail-box {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        &__logo-img {
+            max-width: 110px;
+        }
+        &__btn {
+            text-align: center;
+            max-width: 100px;
+            padding: 4px 5px;
+        }
+        &__menu {
+            width: 70%;
+        }
+    }
+    .top {
+        &__title {
+            font-size: 32px;
+        }
+    }
+    .about {
+        &__info {
+            max-width: 230px;
+            padding: 10px;
+        }
+    }
+    .reviews {
+        &__item-text {
+            font-size: 16px;
+        }
+    }
+    .subscribe {
+        text-align: center;
+    }
+    .footer {
+        &__copyright {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .top {
+        &__img {
+            left: 0px;
+        }
+    }
+    .practice {
+        &__col {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .articles {
+        &__col {
+            width: 100%;
+        }
+    }
+}

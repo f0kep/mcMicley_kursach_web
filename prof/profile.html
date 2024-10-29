@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link">
+
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="loading">
+        <img src="logo.svg" alt="logo">
+    </div>
+    <div class="preload">
+        <div class="wrapper">
+            <header>
+                <div class="header__top top-header">
+                    <div class="top-header__container">
+                        <div class="top-header__welcome">
+                            <p>
+                                McKinley
+                            </p>
+                        </div>
+                        <div class="top-header__event">
+                            <button class="lng-theme" id="theme-button">Switch theme</button>
+                            <span></span>
+                            <div class="top-header__select">
+                                <select class="header-selct">
+                                    <option value="en" selected>English</option>
+                                    <option value="ru">Русский</option>
+                                </select>
+                            </div>
+                            <span></span>
+                            <div class="top-header__exits">
+                                <a href="../areg/index.html" class="lng-back">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="page">
+                <section class="page__main main">
+                    <div class="main__container" style="justify-content: center;align-items: center;">
+                        <div class="info">
+                            <div class="form">
+                                <label class="login_label"><a class="lng-your-role">Your role is </a></label><br><br>
+                                <label class="fname label lng-fname">First name:</label><br>
+                                <label id="fname"></label><br><br>
+
+                                <label class="mname label lng-mname">Middle name:</label><br>
+                                <label id="mname"></label><br><br>
+
+                                <label class="lname label lng-lname">Last name:</label><br>
+                                <label id="lname"></label><br><br>
+
+                                <label class="email label lng-email">Email:</label><br>
+                                <label id="email"></label><br><br>
+
+                                <label class="phoneNum label lng-phone">Phone number:</label><br>
+                                <label id="phoneNum"></label><br><br>
+
+                                <label class="birthDate label lng-birthday">Birth date:</label><br>
+                                <label id="birthDate"></label><br><br><br>
+
+                                <button id="exit" class="top-header__in lng-exit">Logout</button><br><br><br>
+
+                                <button id="clearStorage">Clear Local Storage</button>
+
+                                <script>
+                                    // Get the button element
+                                    const clearStorageBtn = document.getElementById('clearStorage');
+
+                                    // Add a click event listener to the button
+                                    clearStorageBtn.addEventListener('click', () => {
+                                        // Clear the localStorage
+                                        localStorage.clear();
+                                        console.log('Local storage has been cleared.');
+
+                                        window.location.reload();
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__bottom bottom-footer">
+                    <div class="bottom-footer__container">
+                        <div class="bottom-footer__copy lng-all-rights">© 2021 McKinley - All rights reserved.</div>
+                        <a href="../admin/admin_panel.html"
+                            class="bottom-footer__link lng-adminmenu hidden">AdminMenu</a>
+                        <nav class="bottom-footer__menu">
+                            <ul class="bottom-footer__list">
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-privacy">Privacy</a>
+                                </li>
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-security">Security </a>
+                                </li>
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-terms">Terms</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/user_work.js"></script>
+        <script src="js/theme-switcher.js"></script>
+        <script src="js/languages.js"></script>
+        <script src="js/lang-switcher.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/profile.js"></script>
+</body>
+
+</html>

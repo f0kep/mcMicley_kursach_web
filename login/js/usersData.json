@@ -1,0 +1,34 @@
+{
+    "users": [
+      {
+        "phone": "+375951234567",
+        "email": "ivanivanov@example.com",
+        "birthday": "1990-05-15",
+        "first_name": "Иван",
+        "last_name": "Иванов",
+        "middle_name": "Иванович",
+        "login": "ivanivanov",
+        "password": "mySecur3Passw0rd"
+      },
+      {
+        "phone": "+375951234567", 
+        "email": "marypetrova@example.com",
+        "birthday": "1985-11-20",
+        "first_name": "Мария",
+        "last_name": "Петрова",
+        "middle_name": "Ивановна",
+        "login": "marypetrova",
+        "password": "h1ghlyS3cur3Pw"
+      },
+      {
+        "phone": "+375951234567",
+        "email": "alexkuznetsov@example.com", 
+        "birthday": "1992-03-01",
+        "first_name": "Александр",
+        "last_name": "Кузнецов",
+        "middle_name": "Сергеевич",
+        "login": "alexkuznetsov",
+        "password": "uN1qu3Paw0rd"
+      }
+    ]
+  }

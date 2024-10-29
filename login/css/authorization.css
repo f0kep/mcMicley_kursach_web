@@ -1,0 +1,476 @@
+.page {
+    flex-direction: row;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sign-in form {
+    flex-direction: column;
+}
+
+form label {
+    display: inline-block;
+    width: 155px;
+}
+
+form div:not(:nth-child(10)) input {
+    padding: 1px 4px;
+    border-width: 1px;
+    border-radius: 7.5px;
+    height: 20px;
+    width: 225px;
+    color: #555555
+}
+
+form div:nth-child(10),
+form div:last-child {
+    min-width: 100%;
+}
+
+form div:nth-child(10) input {
+    margin-left: 0;
+}
+
+.sign-up div:nth-child(10) label {
+    width: 275px;
+}
+
+form div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+form button:first-child {
+    width: 161px;
+    height: 50px;
+    border-radius: 5px;
+    background: #00486D;
+
+    color: #FFF;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+form button:last-child {
+    border-radius: 5px;
+    background: #00486D;
+    padding: 10px 20px;
+
+    color: #fff;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+form div {
+    display: flex;
+    gap: 5px;
+}
+
+form div input {
+    position: relative;
+}
+
+#visible-password-button {
+    height: 100%;
+    border-radius: 15px;
+    width: 23.6px;
+    padding: 0 0 2.1px 3.6px;
+    background: #00486D;
+    color: #555555;
+    margin: 0 10px;
+}
+
+#generate-password-button,
+#generate-login-button {
+    padding: 0 5px;
+}
+
+#generate-login-button {
+    margin-left: 10px;
+}
+
+span {
+    color: orange;
+    font-size: 20px;
+}
+
+#sign-up-send.hidden,
+#sign-in-send.hidden {
+    display: block;
+    background: #00486D;
+    color: #474747;
+    cursor: default;
+}
+
+/*Термс энд агримент*/
+
+/* фон нашего модального окна */
+.modalBackground {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /* указываем z-индекс для корректного наслаивания */
+    z-index: 1;
+}
+
+/* позиционирование самого модального окна */
+.modalActive {
+    position: absolute;
+    width: 350px;
+    height: 495px;
+    top: calc(50% - 250px);
+    left: calc(50% - 175px);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    padding: 40px 20px;
+}
+
+/* кнопочка закрытия модального окна */
+.modalClose {
+    font-family: var(--font-regular);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* сама картинка кнопочки закрытия */
+.modalClose img {
+    margin: 3px;
+    width: 24px;
+    height: 24px;
+}
+
+/* делаем позиционирование внутренних элементов относительно модального окна */
+.modalWindow {
+    position: relative;
+}
+
+
+@media (min-width: 1445px) {
+    .header-container div {
+        gap: 29.52px;
+    }
+}
+
+body.dark-mode,
+body.dark-mode #theme-button-p,
+body.dark-mode img {
+    filter: invert(100%);
+}
+
+form div {
+    position: relative;
+}
+
+::after {
+    display: block;
+    color: black;
+    background: #00486D;
+    padding: 2px 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+
+.msg-empty::after {
+    content: "<--";
+}
+
+#login-up-label.msg-empty::after {
+    left: 535px;
+}
+
+.msg-phone::after {
+    content: "×";
+}
+
+.msg-phone-plus::after {
+    content: "<-- +";
+}
+
+.msg-phone-bel::after {
+    content: "<-- BLR";
+}
+
+.msg-less16::after {
+    content: ">16";
+}
+
+.msg-name-more3::after {
+    content: ">3";
+}
+
+.msg-login-exist::after {
+    content: "×";
+    left: 535px;
+}
+
+.msg-small-password::after {
+    content: ">8";
+    left: 610px;
+}
+
+.msg-big-password::after {
+    content: "<20";
+    left: 610px;
+}
+
+.msg-digit-password::after {
+    content: "<-- +(1,2,3,4...)";
+    left: 610px;
+}
+
+.msg-letter-password::after {
+    content: "<-- +(a,b,c,d...)";
+    left: 610px;
+}
+
+.msg-speshal-symbol-password::after {
+    content: "<-- +(!,@,#,$...)";
+    left: 610px;
+}
+
+.msg-match-password::after {
+    content: "≠";
+}
+
+@media (max-width: 1000px) {
+
+    .msg-phone,
+    .msg-phone-bel,
+    .msg-empty,
+    .msg-less16,
+    .msg-login-exist,
+    .msg-small-password,
+    .msg-big-password,
+    .msg-digit-password,
+    .msg-letter-password,
+    .msg-speshal-symbol-password,
+    .msg-match-password {
+        height: 39px;
+    }
+
+    ::after,
+    #login-up-label.msg-empty::after,
+    #login-in-label.msg-empty::after,
+    .msg-small-password::after,
+    .msg-login-exist::after,
+    .msg-digit-password::after,
+    .msg-letter-password::after,
+    .msg-speshal-symbol-password::after,
+    .msg-big-password::after {
+        top: 34px;
+        left: 0;
+    }
+}
+
+@media (max-width: 880px) {
+    form div {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .sign-up form div:last-child,
+    .sign-up form div:nth-child(10) {
+        flex-direction: row;
+    }
+
+    .sign-in form div:last-child {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    #generate-login-button {
+        margin-left: 0;
+    }
+
+    #visible-password-button {
+        margin: 0 auto;
+    }
+
+    #terms-of-use-label.msg-empty::after {
+        top: 24px
+    }
+
+    .msg-phone,
+    .msg-phone-bel,
+    .msg-empty,
+    .msg-less16,
+    .msg-login-exist,
+    .msg-small-password,
+    .msg-big-password,
+    .msg-digit-password,
+    .msg-letter-password,
+    .msg-speshal-symbol-password,
+    .msg-match-password {
+        height: 24px;
+    }
+
+    ::after,
+    .msg-empty::after,
+    #login-up-label.msg-empty::after,
+    #login-up-label.msg-empty::after,
+    #login-in-label.msg-empty::after,
+    .msg-match-password::after {
+        top: 59px;
+    }
+
+    #login-up-label.msg-empty::after,
+    .msg-login-exist::after {
+        top: 84px
+    }
+
+    .msg-small-password::after,
+    .msg-big-password::after,
+    .msg-digit-password::after,
+    .msg-letter-password::after,
+    .msg-speshal-symbol-password::after {
+        top: 114px
+    }
+}
+
+@media (max-width: 600px) {
+    .top-header__container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 628px) {
+    form button:first-child {
+        width: 100px;
+    }
+
+    form div:not(:nth-child(10)) input {
+        height: 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form div:last-child {
+        gap: 30px;
+        justify-content: start;
+    }
+
+    #generate-login-button {
+        margin: 20px 0 0;
+        width: 100%;
+    }
+
+    .sign-up div:nth-child(10) label {
+        width: 100%;
+    }
+
+    .sign-up div:nth-child(10) {
+        justify-content: center;
+    }
+
+    #visible-password-button {
+        margin: 15px auto;
+    }
+
+    #sign-up-send,
+    #sign-in-send {
+        width: 100%;
+    }
+
+    form button:last-child {
+        width: 100%;
+        height: 50px;
+    }
+
+    #login-up-label.msg-empty::after,
+    .msg-login-exist::after {
+        top: 55px;
+    }
+
+    .msg-small-password::after,
+    .msg-big-password::after,
+    .msg-digit-password::after,
+    .msg-letter-password::after,
+    .msg-speshal-symbol-password::after {
+        top: 50px;
+    }
+
+    #password-in-label.msg-empty::after {
+        top: 59px;
+    }
+
+    #terms-of-use-label.msg-empty::after {
+        top: 49px;
+    }
+}
+
+@media (max-width: 507px) {
+    form {
+        gap: 60px;
+    }
+
+    .msg-small-password::after,
+    .msg-big-password::after,
+    .msg-digit-password::after,
+    .msg-letter-password::after,
+    .msg-speshal-symbol-password::after {
+        top: 169px;
+    }
+
+    form div:nth-child(10) label {
+        height: 48px;
+    }
+
+    #terms-of-use-label.msg-empty::after {
+        top: 74px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    #login-up-label.msg-empty::after,
+    .msg-login-exist::after {
+        top: 139px;
+    }
+}

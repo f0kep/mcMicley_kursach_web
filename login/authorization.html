@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="icon" href="./images/svg/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/authorization.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link">
+</head>
+
+<body>
+    <div class="loading">
+        <img src="images/svg/logo.svg" alt="logo">
+    </div>
+    <div class="preload">
+        <div class="wrapper">
+            <header>
+                <div class="header__top top-header">
+                    <div class="top-header__container">
+                        <div class="top-header__welcome">
+                            <p>
+                                McKinley
+                            </p>
+                        </div>
+                        <div class="top-header__event">
+                            <button class="lng-theme" id="theme-button">Switch theme</button>
+                            <span></span>
+                            <div class="top-header__select">
+                                <select class="header-selct">
+                                    <option value="en" selected>English</option>
+                                    <option value="ru">Русский</option>
+                                </select>
+                            </div>
+                            <span></span>
+                            <div class="top-header__exits">
+                                <a href="../index.html" class="lng-back">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <section class="page__main main">
+                    <div class="main__container">
+                        <section class="sign-in">
+                            <h2 class="logo-text lng-signin" style="margin-bottom: 1rem;">Sign in</h2>
+                            <form action="">
+                                <div>
+                                    <label for="login" id="login-in-label"><a class="lng-login">Login</a>
+                                        <span>*</span></label>
+                                    <input type="text" name="login" id="login" required>
+                                </div>
+                                <div>
+                                    <label for="password" id="password-in-label"><a class="lng-pass">Password</a>
+                                        <span>*</span></label>
+                                    <input type="password" name="password" id="password" required>
+                                </div>
+                                <div>
+                                    <button type="button" class="lng-signin hidden" id="sign-in-send">Sign in</button>
+                                    <button type="button" class="lng-create-new lng-create-new-syka"
+                                        id="sign-up-button">Create new
+                                        account</button>
+                                </div>
+                            </form>
+                        </section>
+                        <section class="sign-up hidden">
+                            <h2 class="logo-text lng-Signup" style="margin-bottom: 1rem;">Sign up</h2>
+                            <form action="">
+                                <div>
+                                    <label for="phone" id="phone-label"><a class="lng-phone">Phone</a>
+                                        <span>*</span></label>
+                                    <input type="text" name="phone" id="phone" required>
+                                </div>
+                                <div>
+                                    <label for="email" id="email-label"><a class="lng-email">Email</a>
+                                        <span>*</span></label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div>
+                                    <label for="birth-date" id="birthday-label"><a class="lng-birth">Birth date</a>
+                                        <span>*</span></label>
+                                    <input type="date" name="birth-date" id="birth-date" required>
+                                </div>
+                                <div>
+                                    <label for="name" id="name-label"><a class="lng-name">Name</a>
+                                        <span>*</span></label>
+                                    <input type="text" name="name" id="name" required>
+                                </div>
+                                <div>
+                                    <label for="surname" id="surname-label"><a class="lng-surname">Surname</a>
+                                        <span>*</span></label>
+                                    <input type="text" name="surname" id="surname" required>
+                                </div>
+                                <div>
+                                    <label class="lng-patr" for="patronymic">Patronymic</label>
+                                    <input type="text" name="patronymic" id="patronymic" optional>
+                                </div>
+                                <div>
+                                    <label for="create-login" id="login-up-label"><a class="lng-login">Login</a>
+                                        <span>*</span></label>
+                                    <input type="text" name="create-login" id="create-login" optional>
+                                    <button class="lng-gen-log" type="button" id="generate-login-button">Generate
+                                        login</button>
+                                </div>
+                                <div>
+                                    <label for="create-password" id="password-up-label"><a class="lng-pass">Password</a>
+                                        <span>*</span></label>
+                                    <input type="password" name="create-password" id="create-password" required>
+                                    <button type="button" id="visible-password-button">👁</button>
+                                    <button class="lng-gen-pass" type="button" id="generate-password-button">Generate
+                                        password</button>
+                                </div>
+                                <div>
+                                    <label class="lng-con-pass" for="confirm-password" id="confirm-password-label"><a
+                                            class="">Confirm password</a>
+                                        <span>*</span></label>
+                                    <input type="password" name="confirm-password" id="confirm-password" required>
+                                </div>
+                                <div>
+                                    <label for="terms-of-use" id="terms-of-use-label">
+                                        <a class="lng-i-agree">I read and agree with </a>
+                                        <a class="lng-term-reg trigger" href="#">terms of use </a>
+                                        <span>*</span>
+                                    </label>
+                                    <input type="checkbox" name="terms-of-use" id="terms-of-use" required>
+                                </div>
+                                <div>
+                                    <button type="button" class="lng-signup hidden" id="sign-up-send">Sign up</button>
+                                    <button class="lng-login-as" type="button" id="sign-in-button">Login as existing
+                                        account</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__bottom bottom-footer">
+                    <div class="bottom-footer__container">
+                        <div class="bottom-footer__copy lng-all-rights">© 2021 McKinley - All rights reserved.</div>
+                        <a href="admin_panel.html" class="bottom-footer__link lng-adminmenu hidden">AdminMenu</a>
+                        <nav class="bottom-footer__menu">
+                            <ul class="bottom-footer__list">
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-privacy">Privacy</a>
+                                </li>
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-security">Security </a>
+                                </li>
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-terms">Terms</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+            <div class="modalBackground">
+                <div class="modalActive">
+                    <div class="modalClose">
+                        <button id="button-close" class="footer-button-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="modalWindow">
+                        <a><a class="lng-modal-1">Условия использования McKinley</a><br>
+                            <br>
+                            <a class="lng-modal-2">Используя сайт McKinley, вы соглашаетесь с нашими Условиями
+                                использования и Политикой конфиденциальности.</a><br><br>
+                            <a class="lng-modal-3">Использование платформы</a><br>
+                            <br>
+                            <a class="lng-modal-4">Вы можете использовать платформу McKinley только в законных
+                                целях.</a><br><br>
+                            <a class="lng-modal-5">Учетная запись</a><br>
+                            <br>
+                            <a class="lng-modal-6">Для некоторых функций требуется регистрация с предоставлением
+                                достоверной информации. Вы отвечаете за безопасность своей учетной записи.</a><br><br>
+                            <a class="lng-modal-7">Оплата и поддержка</a><br>
+                            <br>
+                            <a class="lng-modal-8">Цены могут меняться, оплата через наши одобренные способы. Мы
+                                стараемся выполнить услуги вовремя, но не гарантируем сроки.</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/authorization.js" type="module"></script>
+        <script src="js/theme-switcher.js"></script>
+        <script src="js/languages.js"></script>
+        <script src="js/lang-switcher.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+main {
+    align-items: start;
+}
+.hero{
+    background-color:#7AC751;
+    color: #E5E5E5;
+    background-size:cover;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    width: 100dvw;
+}
+.page{margin-top: 0;}
+.box{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+.logo-text{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+p{margin-top: 2rem;
+max-width: 80%;}
+.box-text{display: flex; flex-direction: column; align-items: center;}

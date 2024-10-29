@@ -1,0 +1,65 @@
+body {
+    background: #252525;
+    color: #E5E5E5;
+}
+
+.main__line {
+    background: #353535;
+}
+
+.main__collections-items {
+    background: #353535;
+}
+
+.main-header__input {
+    background: #353535;
+    color: #E5E5E5;
+}
+
+.main-header__select {
+    background: #303030;
+    color: #E5E5E5;
+    border-left: 1.5px solid rgb(110, 110, 110);
+}
+
+.item-advantages__info {
+    color: #d1d1d1;
+}
+
+.content-category__title {
+    color: #555555;
+}
+
+.type {
+    color: #E5E5E5;
+}
+
+.content-offer__title {
+    color: #555555;
+}
+
+.customer-slide__content {
+    background: #303030;
+    color: #E5E5E5;
+}
+
+.customer-slide__reviews {
+    color: #E5E5E5;
+}
+
+.customer-slide__job {
+    color: #E5E5E5;
+}
+.main-footer__title{
+    color: #E5E5E5;
+}
+.main-header__container{
+    background: #252525;
+}
+.menu-open .menu{
+    background: #353535;
+}
+.burger-wrap::before{
+    background:#252525;
+}
+.modalActive{background-color: #353535;}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link">
+    <link rel="stylesheet" type="text/css" href="../p1/css/dark.css" id="theme-link">
+    <title>Admin♥</title>
+    <style>
+        .user {
+            border: 0.1rem solid;
+            background-color: rgba(165, 165, 165, 0.5);
+            padding: 0.5rem;
+            margin: 1rem 0.5rem;
+        }
+
+        .users-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 2rem
+        }
+
+        .user_header {
+            margin-top: 1.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .user_content {
+            border: 0.1rem solid;
+            background-color: rgba(206, 206, 206, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <img src="logo.svg" alt="logo">
+    </div>
+    <div class="preload">
+        <div class="wrapper">
+            <header>
+                <div class="header__top top-header">
+                    <div class="top-header__container">
+                        <div class="top-header__welcome">
+                            <p>
+                                McKinley
+                            </p>
+                        </div>
+                        <div class="top-header__event">
+                            <button class="lng-theme" id="theme-button">Switch theme</button>
+                            <span></span>
+                            <div class="top-header__select">
+                                <select class="header-selct">
+                                    <option value="en" selected>English</option>
+                                    <option value="ru">Русский</option>
+                                </select>
+                            </div>
+                            <span></span>
+                            <div class="top-header__exits">
+                                <a href="../areg/index.html" class="lng-back">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <section class="page__main main">
+                    <div class="main__container" style="justify-content: center;align-items: center;">
+                        <div style="width: 60%; margin-top: 3rem;">
+                            <div class="user_content" style="width: 100%;">
+                                <div class="user_header"><span class="lng-all-users">All users </span></div>
+                                <div class="users-div"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__bottom bottom-footer">
+                    <div class="bottom-footer__container">
+                        <div class="bottom-footer__copy lng-all-rights">© 2021 McKinley - All rights reserved.</div>
+                        <nav class="bottom-footer__menu">
+                            <ul class="bottom-footer__list">
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-privacy">Privacy</a>
+                                </li>
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-security">Security </a>
+                                </li>
+                                <li class="bottom-footer__item">
+                                    <a href="#" class="bottom-footer__link lng-terms">Terms</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/user_work.js"></script>
+        <script src="js/admin_panel.js"></script>
+        <script src="js/theme-switcher.js"></script>
+        <script src="js/languages.js"></script>
+        <script src="js/lang-switcher.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
